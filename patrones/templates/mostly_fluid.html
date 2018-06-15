@@ -7,66 +7,51 @@
 
     <!-- Instalacion de Bootstrap -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Estilos para representar graficamente los patrones -->
+    <style type="text/css">
+      .borde{
+        background-color: gray;
+        height:200px;
+      }
+      .borde1{
+        background-color: aquamarine;
+        height:150px;
+        text-align: center;
+      }
+      .borde2{
+        background-color: olivedrab;
+        height:50px;
+        text-align: center;
+      }
+      .borde3{
+        background-color: orangered;
+        height:50px;
+        text-align: center;
+      }
+
+    </style>
+
   </head>
   <body>
 
-    <style type="text/css">
-    .c > div {
-    padding: 1em;
-    }
 
-    .main {
-    background-color: green;
-    }
 
-    .c2 {
-    background-color: blue;
-    }
-
-    .c3{
-    background-color: #a53d36;
-    }
-
-    @media screen and (min-width: 31.42em) {
-    .c2, .c3 {
-      float: left;
-      width: 50%;
-    }
-    }
-    </style>
-
-    <div id="pattern" class="pattern">
-    <div class="c">
-            <div class="main">
-                <h2>Bloque 1</h2>
-                <p>Texto del bloque 1</p>
-            </div>
-            <div class="c2">
-                <h3>Bloque 2</h3>
-                <p>Ejemplo de texto mas largo de bloque 2</p>
-                <p>Ejemplo de texto mas largo de bloque 2</p>
-                <p>Ejemplo de texto mas largo de bloque 2</p>
-                <p>Ejemplo de texto mas largo de bloque 2</p>
-            </div>
-            <div class="c3">
-                <h3>Bloque 3</h3>
-                <p>Ejemplo de texto mas largo de bloque 3</p>
-                <p>Ejemplo de texto mas largo de bloque 3</p>
-                <p>Ejemplo de texto mas largo de bloque 3</p>
-                <p>Ejemplo de texto mas largo de bloque 3</p>
-            </div>
-    </div>
-
-    <!-- Boton volver -->
-    <div class="c">
+    <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
-          <a href="{% url 'menu' %}" class="btn btn-primary">Volver</a>
-        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  borde1"><h1>Bloque 1</h1> </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6     borde2"><h1>Bloque 2</h1> </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6     borde3"><h1>Bloque 3</h1> </div>
+
+        <!-- boton volver -->
+        <div class=" text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><a href="{% url 'menu' %}" class="btn btn-primary">Volver</a> </div>
+
+
       </div>
     </div>
 
-    </div>
+
 
   </body>
 </html>
