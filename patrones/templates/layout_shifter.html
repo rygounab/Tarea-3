@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tarea 3 Rodrigo Bustos</title>
+
+    <!-- Instalacion de Bootstrap -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Estilos para representar graficamente los patrones -->
+    <style type="text/css">
+      .borde{
+        background-color: gray;
+        height:200px;
+      }
+      .borde1{
+        background-color: aquamarine;
+        height:300px;
+        text-align: center;
+      }
+      .borde2{
+        background-color: olivedrab;
+        height:150px;
+        text-align: center;
+      }
+      .borde3{
+        background-color: orangered;
+        height:150px;
+        text-align: center;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2    borde1"><h1>Bloque 1</h1> </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10  borde2"><h1>Bloque 2</h1> </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10  borde3"><h1>Bloque 3 (No me salio ;-;) </h1> </div>
+
+        <!-- boton volver -->
+        <div class=" text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><a href="{% url 'menu' %}" class="btn btn-primary">Volver</a> </div>
+
+
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
